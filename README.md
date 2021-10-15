@@ -12,8 +12,7 @@
 
 ## ✨ Preview
 
-<img src="https://i.imgur.com/71j6D77.png
-">
+<img src="https://i.imgur.com/71j6D77.png">
 
 <hr>
 
