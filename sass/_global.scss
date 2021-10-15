@@ -1,0 +1,30 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #fff;
+  color: $font-color;
+  font: 400 1.6rem $font-primary;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: $large;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include device(s) {
+    max-width: $small;
+  }
+}

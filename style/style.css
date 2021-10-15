@@ -1,0 +1,106 @@
+*, *:before, *:after { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+button, input, textarea { outline: none; border: none; }
+
+a { text-decoration: none; color: #000; }
+
+ol, ul { list-style: none; }
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul { font-size: 1em; font-weight: normal; }
+
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+:root { font-size: 62.5%; }
+
+body { background: #fff; color: #161616; font: 400 1.6rem "Lato", sans-serif; scroll-behavior: smooth; }
+
+img { display: block; max-width: 100%; }
+
+.container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
+
+@media screen and (max-width: 479px) { .container { max-width: 480px; } }
+
+header { height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 0 20px; }
+
+header ul { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 3rem; }
+
+header ul img { width: 20px; height: 20px; }
+
+.offer { padding: 50px 0; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-height: 200px; background-image: url("../assets/img/banner-container.jpg"); background-repeat: repeat-x; background-position: center; }
+
+@-webkit-keyframes float { to { -webkit-transform: translate3d(0, -10px, 0); transform: translate3d(0, -10px, 0); }
+  from { -webkit-transform: translate3d(0, 10px, 0); transform: translate3d(0, 10px, 0); } }
+
+@keyframes float { to { -webkit-transform: translate3d(0, -10px, 0); transform: translate3d(0, -10px, 0); }
+  from { -webkit-transform: translate3d(0, 10px, 0); transform: translate3d(0, 10px, 0); } }
+
+.offer img { width: calc(min(500px, 80%)); -webkit-animation: alternate float infinite 3s ease-in-out; animation: alternate float infinite 3s ease-in-out; }
+
+.products .title { border-bottom: 0.2px solid #a5a1a1; }
+
+.products .title .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 80px; }
+
+.products .title h2 { font-size: 2rem; font-weight: bold; }
+
+.products .title p { font-size: 1.8rem; }
+
+.product { padding: 6rem 2rem 12rem; display: -ms-grid; display: grid; -ms-grid-columns: (minmax(250px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); row-gap: 60px; -webkit-column-gap: 40px; column-gap: 40px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+@media screen and (min-width: 768px) and (max-width: 1299px) { .product { -ms-grid-columns: (minmax(200px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+
+@media screen and (max-width: 479px) { .product { -ms-grid-columns: (minmax(120px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } }
+
+.product .card-product img { width: 100%; border-radius: 10px; -webkit-box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.158); box-shadow: 0px 0px 33px 1px rgba(0, 0, 0, 0.158); border: 3px solid #5ca720; margin-bottom: 2rem; -webkit-transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1); transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.product .card-product img:hover { -webkit-transform: scale(0.99); transform: scale(0.99); -webkit-box-shadow: none; box-shadow: none; }
+
+.product .card-product h4 { margin-bottom: 1rem; font-size: 2.2rem; font-weight: 400; }
+
+.product .card-product p { color: #5ca720; font-size: 2.2rem; font-weight: 700; }
+
+.product .card-product p small { color: #161616; font-size: 2rem; font-weight: 400; }
+
+.politics { background: #f9f9f9; border-bottom: 1px solid #a5a1a1; }
+
+.politics .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 4rem 2rem; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 2rem; }
+
+.politics .faq { font-size: 2rem; }
+
+.politics .faq li { margin-bottom: 1rem; }
+
+.politics .faq li a { display: block; width: -webkit-max-content; width: -moz-max-content; width: max-content; position: relative; }
+
+.politics .faq li a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #5ca720; -webkit-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.politics .faq li a:hover::after { width: 100%; }
+
+.politics .newsletter label { display: block; margin-bottom: 1rem; font-size: 2rem; }
+
+.politics .newsletter input, .politics .newsletter button { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 40px; outline: none; border: none; font-size: 2rem; font-family: "Lato", sans-serif; padding: 0.5rem 1rem; }
+
+@media screen and (max-width: 479px) { .politics .newsletter input, .politics .newsletter button { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+
+.politics .newsletter input { background: transparent; border: 1px solid #a5a1a1; border-right: none; color: #161616; width: 300px; border-radius: 5px 0 0 5px; }
+
+@media screen and (max-width: 479px) { .politics .newsletter input { border: 1px solid #a5a1a1; border-radius: 5px; } }
+
+.politics .newsletter button { position: relative; left: -8px; border-radius: 0 5px 5px 0; cursor: pointer; background: #5ca720; color: #fff; }
+
+@media screen and (max-width: 479px) { .politics .newsletter button { margin-top: 5px; position: static; border-radius: 5px; } }
+
+footer { background: #f9f9f9; }
+
+footer .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 4rem 2rem; }
+
+.social { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
+
+.social a img { width: 30px; height: 30px; -webkit-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.social a:hover img { -webkit-transform: scale(1.5); transform: scale(1.5); }
+
+.pay { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
+
+.pay img { width: 50px; height: 30px; }
+/*# sourceMappingURL=style.css.map */

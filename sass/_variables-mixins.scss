@@ -1,0 +1,26 @@
+$font-primary: 'Lato', sans-serif;
+
+$font-color: #161616;
+$color-primary: #5ca720;
+
+$large: 1300px;
+$medium: 768px;
+$small: 480px;
+
+$gutter: 30px;
+
+@mixin device($size) {
+  @if $size == l {
+    @media screen and (max-width: #{$large}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: #{$medium}) and (max-width: $large - 1) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: $small - 1) {
+      @content;
+    }
+  }
+}
