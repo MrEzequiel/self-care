@@ -76,6 +76,8 @@ header ul img { width: 20px; height: 20px; }
 
 .politics .faq li a:hover::after { width: 100%; }
 
+@media screen and (max-width: 479px) { .politics .newsletter { width: 100%; } }
+
 .politics .newsletter label { display: block; margin-bottom: 1rem; font-size: 2rem; }
 
 .politics .newsletter input, .politics .newsletter button { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 40px; outline: none; border: none; font-size: 2rem; font-family: "Lato", sans-serif; padding: 0.5rem 1rem; }
@@ -84,11 +86,11 @@ header ul img { width: 20px; height: 20px; }
 
 .politics .newsletter input { background: transparent; border: 1px solid #a5a1a1; border-right: none; color: #161616; width: 300px; border-radius: 5px 0 0 5px; }
 
-@media screen and (max-width: 479px) { .politics .newsletter input { border: 1px solid #a5a1a1; border-radius: 5px; } }
+@media screen and (max-width: 479px) { .politics .newsletter input { border: 1px solid #a5a1a1; border-radius: 5px; width: 100%; } }
 
 .politics .newsletter button { position: relative; left: -8px; border-radius: 0 5px 5px 0; cursor: pointer; background: #5ca720; color: #fff; }
 
-@media screen and (max-width: 479px) { .politics .newsletter button { margin-top: 5px; position: static; border-radius: 5px; } }
+@media screen and (max-width: 479px) { .politics .newsletter button { width: 100%; margin-top: 5px; position: static; border-radius: 5px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
 
 footer { background: #f9f9f9; }
 
